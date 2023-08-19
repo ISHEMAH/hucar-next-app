@@ -11,8 +11,11 @@ interface SearchParams {
   model?: string;
   pageNumber?: number;
 }
+interface searchParamsProps{
+  searchParams:SearchParams ;
+}
 
-export default async function Home({searchParams}) {
+export default async function Home({searchParams}:searchParamsProps) {
   const allCars = await fetchCars({
     manufacturer:searchParams.manufacturer || '',
     year: searchParams.year || 2022,
