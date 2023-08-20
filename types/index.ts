@@ -40,7 +40,7 @@ export interface FilterProps {
 export interface OptionProps{
     title:string;
     value: string;
-    type:string
+    type:string;
 }
 
 export interface CustomFilterProps {
